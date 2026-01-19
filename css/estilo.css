@@ -1,0 +1,241 @@
+* { margin: 0; 
+padding: 0; 
+border: 0; 
+font-size: 100%; 
+vertical-align: baseline; 
+font-family: "Abel", sans-serif;
+} 
+article, aside, details, figcaption, figure, main, footer, header, hgroup, nav, section { 
+    display: block; 
+} 
+body { 
+    line-height: 1; 
+} 
+ol, ul { 
+    list-style: none; 
+} 
+table { 
+    border-collapse: collapse; 
+    border-spacing: 0; 
+}
+
+/*cuerpo*/
+.contenedor {
+    width: 100%;
+    background-color: rgb(254, 249, 239);
+    margin: auto;
+}
+ /*Cabecera*/
+ #cabecera div {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(237, 177, 64);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#cabecera div img {
+    width: 200px;
+}
+/*menu*/
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    background-color: rgb(98, 75, 31);
+    height: 100px;
+}
+.menu ul li {
+    margin-top: 4px;
+    color: white;
+    
+}
+.menu hr {
+    border: solid white 0.5px;
+    width: 100%;
+}
+/*titulo*/
+h1 {
+    margin-left: 1rem;
+    font-size: 20pt;
+}
+.r {
+    border: solid rgb(143, 143, 143) 0.5px;
+    margin: 1rem;
+    width: 93%;
+}
+.h {
+    border: solid rgb(143, 143, 143) 0.5px;
+    margin: 1rem;
+    margin-bottom: 2rem;
+    width: 93%;
+}
+/*historia*/
+.his {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+}
+article img {
+    width: 100%;
+    border-radius: 10px;
+}
+article {
+    width: 93%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: space-around;
+}
+article h2 {
+    font-weight: bold;
+    font-size: 20pt;
+    margin-top: 1rem;
+}
+.tit {
+    font-weight: bold;
+    font-size: 16pt;
+    color: black;
+}
+.cuerpo {
+    color: rgb(75, 75, 75);
+    width: 80%;
+}
+.pie {
+    margin-bottom: 2rem;
+    color: rgb(75, 75, 75);
+}
+
+/*enlaces de menu*/
+ a {
+    text-decoration: none;
+    color: white;
+}
+ nav a:hover {
+    color: rgb(245, 159, 93);
+}
+
+/*pie de pagina*/
+footer {
+    background-color: black;
+    height: 75px;
+    padding-top: 20px;
+}
+.foot {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.foot p {
+    font-size: 9pt;
+}
+.foot a:active {
+    text-decoration: underline solid yellow;
+}
+.up {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 30px;
+}
+.up img {
+    width: 30px;
+    margin-right: 20px;
+}
+
+/*tablet*/
+@media (min-width: 481px) and (max-width: 834px) {
+    .contenedor {
+        width: 100%;
+    }
+    /*cabecera*/
+    #cabecera div {
+    width: 100%;
+    }
+    /*menu*/
+    .menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    height: 50px;
+    }
+    .menu hr {
+        width: 0px;
+        border: solid rgb(98, 75, 31);
+    }
+    .menu ul li {
+        margin-top: 0px;
+    }
+    /*imagenes*/
+    article img {
+        width: 100%;
+    }
+    article {
+        width: 96%;
+    }
+    .h {
+        width: 96%;
+    }
+    .r {
+        width: 96%;
+    }
+    /*texto*/
+    article p {
+        width: 100%;
+    }
+}
+/*laptop/desktop*/
+@media (min-width:835px) {
+    .contenedor {
+        width: 1300px;
+    }
+    #cabecera div {
+        width: 1300px;
+    }
+     .menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    height: 50px;
+    }
+    .menu hr {
+        width: 0px;
+        border: solid rgb(98, 75, 31);
+    }
+    .menu ul li {
+        margin-top: 0px;
+    }
+    /*articulos*/
+    .his {
+        width: 1300px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    article img {
+        width: 100%;
+    }
+    article {
+        width: 600px;
+    }
+    .h {
+        width: 96%;
+        margin-left: 1.5rem;
+    }
+    .r {
+        width: 96%;
+        margin-left: 1.5rem;
+    }
+    h1 {
+        margin-left: 1.5rem;
+    }
+}
